@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/workersSchema"
+    xmlns:tns="http://xml.netbeans.org/schema/workersSchema"
+    elementFormDefault="qualified">
+    <xsd:element name="workers">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="worker" maxOccurs="unbounded" type="tns:worker"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="worker">
+        <xsd:sequence>
+            <xsd:element name="name"/>
+            <xsd:element name="debit"/>
+            <xsd:element name="ratio"/>
+            <xsd:element name="shifts" maxOccurs="unbounded" type="tns:shift"/>
+            <xsd:element name="preferences" maxOccurs="unbounded" type="tns:shift"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="shift">
+        <xsd:sequence>
+            <xsd:element name="workday" type="tns:workday"/>
+            <xsd:element name="previousShift" type="tns:shift"/>
+            <xsd:element name="nextShift" type="tns:shift"/>
+            <xsd:element name="start" type="xsd:int"/>
+            <xsd:element name="end" type="xsd:int"/>
+            <xsd:element name="capacity" type="xsd:int"/>
+            <xsd:element name="workers" maxOccurs="unbounded" type="tns:worker"/>
+            <xsd:element name="volunteers" maxOccurs="unbounded" type="tns:worker"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="workday">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="numberOfShifts" type="xsd:int"/>
+            <xsd:element name="shifts" maxOccurs="unbounded" type="tns:shift"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<workerConfiguration>
+
+  <!--<oclink xlink:href="configuration.xml" xlink:show="embed" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <xi:include href="configuration.xml"  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  -->
+
+  <workdays>
+    <workday>
+      <id>1</id>
+      <name>Monday</name>
+    </workday>
+    <workday>
+      <id>2</id>
+      <name>Tuesday</name>
+    </workday>
+    <workday>
+      <id>3</id>
+      <name>Wednesday</name>
+    </workday>
+    <workday>
+      <id>4</id>
+      <name>Thursday</name>
+    </workday>
+    <workday>
+      <id>5</id>
+      <name>Friday</name>
+    </workday>
+  </workdays>
+  <workers>
+    <worker>
+      <name>Iris</name>
+      <username>iris</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>2</role>
+      <mutable>true</mutable>
+      <debit>14</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>8</start>
+          <end>14</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>8</start>
+          <end>14</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>14</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    
+    <worker>
+      <name>Jan</name>
+      <username>jan</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>6</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    <worker>
+      <name>Sabrina</name>
+      <username>sabrina</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>12</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    <worker>
+      <name>Anna</name>
+      <username>anna</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>10</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>10</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>14</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>14</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>14</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    <worker>
+      <name>Michael</name>
+      <username>michael</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>14</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>14</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>10</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>16</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    <worker>
+      <name>Katha</name>
+      <username>katha</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>8</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      	<preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    <worker>
+      <name>Thomas</name>
+      <username>thomas</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>14</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>8</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>10</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    <worker>
+      <name>Adrian</name>
+      <username>adrian</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>8</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>10</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>10</start>
+          <end>14</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>14</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>10</start>
+          <end>16</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    <worker>
+      <name>Laura</name>
+      <username>laura</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>true</mutable>
+      <debit>10</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>16</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>14</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>10</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>10</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>14</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+      </preferences>
+    </worker>
+    
+    
+    <worker>
+      <name>Christian H.</name>
+      <username>christianh</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>false</mutable>
+      <debit>8</debit>
+      <ratio>0.0</ratio>
+      <shifts>
+          
+      </shifts>
+      
+      <preferences>
+          <!--
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>10</start>
+          <end>14</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>10</start>
+          <end>14</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>10</start>
+          <end>14</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>10</start>
+          <end>14</end>
+        </timePeriod>
+        -->
+      </preferences>
+    </worker>
+    
+    <worker>
+      <name>Patrick</name>
+      <username>patrick</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>false</mutable>
+      <debit>9</debit>
+      <ratio>0.0</ratio>
+      <shifts/>
+      <preferences>
+          
+          <!--
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>16</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>10</start>
+          <end>18</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        -->
+        
+      </preferences>
+      
+    </worker>
+    
+    <worker>
+      <name>Christian G.</name>
+      <username>christiang</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>false</mutable>
+      <debit>9</debit>
+      <ratio>0.0</ratio>
+      <shifts>
+      
+      </shifts>
+      
+      <preferences>
+          <!--
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>10</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>10</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        -->
+      </preferences>
+      
+    </worker>
+
+    <worker>
+      <name>Azubi</name>
+      <username>azubi</username>
+      <password>098f6bcd4621d373cade4e832627b4f6</password>
+      <role>1</role>
+      <mutable>false</mutable>
+      <debit>17</debit>
+      <ratio>0.0</ratio>
+      <shifts>
+          
+      </shifts>
+      <preferences>
+         <!--
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <start>8</start>
+          <end>12</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <start>8</start>
+          <end>16</end>
+        </timePeriod>
+        <timePeriod>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <start>8</start>
+          <end>14</end>
+        </timePeriod>
+        -->
+      </preferences>
+    </worker>
+
+  </workers>
+</workerConfiguration>

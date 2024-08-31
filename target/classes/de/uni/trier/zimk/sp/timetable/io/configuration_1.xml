@@ -1,0 +1,770 @@
+<organisationalConfiguration>
+  <workdays>
+    <workday>
+      <id>1</id>
+      <name>Monday</name>
+    </workday>
+    <workday>
+      <id>2</id>
+      <name>Tuesday</name>
+    </workday>
+    <workday>
+      <id>3</id>
+      <name>Wednesday</name>
+    </workday>
+    <workday>
+      <id>4</id>
+      <name>Thursday</name>
+    </workday>
+    <workday>
+      <id>5</id>
+      <name>Friday</name>
+    </workday>
+  </workdays>
+  <locations>
+    <location>
+      <id>1</id>
+      <name>Service-Punkt 1</name>
+      <active>true</active>
+      <shifts>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>0</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+      </shifts>
+    </location>
+    <location>
+      <id>2</id>
+      <name>Service-Punkt 2</name>
+      <active>true</active>
+      <shifts>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>9</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>11</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>11</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>13</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>13</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>15</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>9</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>11</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>11</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>13</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>13</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>15</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>9</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>11</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>11</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>13</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>13</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>15</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>9</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>11</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>11</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>13</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>13</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>15</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>9</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>11</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>11</start>
+          <end>12</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>13</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>13</start>
+          <end>14</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>15</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+      </shifts>
+    </location>
+    <location>
+      <id>3</id>
+      <name>Bibliothek</name>
+      <active>true</active>
+      <shifts>
+        <!--
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        -->
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <!--
+        <locationShift>
+          <workday reference="../../../../../workdays/workday"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        -->
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <!--
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[2]"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        -->
+        
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <!--
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[3]"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        -->
+        
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        
+        <!--
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[4]"/>
+          <location reference="../../.."/>
+          <start>16</start>
+          <end>18</end>
+          <capacity>2</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>8</start>
+          <end>10</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        -->
+        
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>10</start>
+          <end>12</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>12</start>
+          <end>14</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+        <locationShift>
+          <workday reference="../../../../../workdays/workday[5]"/>
+          <location reference="../../.."/>
+          <start>14</start>
+          <end>16</end>
+          <capacity>1</capacity>
+          <workers/>
+          <changed>false</changed>
+        </locationShift>
+      </shifts>
+    </location>
+  </locations>
+</organisationalConfiguration>

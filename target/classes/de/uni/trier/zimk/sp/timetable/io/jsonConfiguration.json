@@ -1,0 +1,69 @@
+{
+    "validityStart": 1329081818801,
+    "validityEnd": 1419101818801,
+     "workdays":  [
+        { "id": 1, "name": "Monday" },
+        { "id": 2, "name": "Tuesday" },
+        { "id": 3, "name": "Wednesday" },
+        { "id": 4, "name": "Thursday" },
+        { "id": 5, "name": "Friday" }
+      ],
+    "locations": [
+        {
+          "id": 1,
+          "name": "Service-Punkt 1",
+          "active": true,
+          "shifts": [
+              { "start": 8, "end": 9, "capacity": 1, "changed": false },
+              { "start": 9, "end": 10, "capacity": 1, "changed": false },
+              { "start": 10, "end": 11, "capacity": 1, "changed": false },
+              { "start": 11, "end": 12, "capacity": 1, "changed": false },
+              { "start": 12, "end": 13, "capacity": 0, "changed": false },
+              { "start": 13, "end": 14, "capacity": 0, "changed": false },
+              { "start": 14, "end": 15, "capacity": 0, "changed": false },
+              { "start": 15, "end": 16, "capacity": 0, "changed": false },
+              { "start": 16, "end": 17, "capacity": 2, "changed": false },
+              { "start": 17, "end": 18, "capacity": 2, "changed": false }
+            ]
+        }
+      ],
+    "workers":  [
+        {
+          "name": "Iris",
+          "username": "iris",
+          "password": "098f6bcd4621d373cade4e832627b4f6",
+          "role": 2,
+          "mutable": true,
+          "color": { "redValue": 255, "greenValue": 0, "blueValue": 255 },
+          "debit": 14,
+          "ratio": 0.0,
+          "shifts": [],
+          "preferences":  [
+              { "workdayId": 1, "start": 8, "end": 14 },
+              { "workdayId": 2, "start": 8, "end": 14 },
+              { "workdayId": 3, "start": 8, "end": 16 },
+              { "workdayId": 4, "start": 8, "end": 14 }
+            ]
+          
+        },
+        {
+          "name": "Jan",
+          "username": "jan",
+          "password": "098f6bcd4621d373cade4e832627b4f6",
+          "role": 1,
+          "mutable": true,
+          "color": { "redValue": 148, "greenValue": 0, "blueValue": 211 },
+          "debit": 6,
+          "ratio": 0.0,
+          "shifts": [],
+          "preferences": [
+              { "workdayId": 3, "start": 8, "end": 18 },
+              { "workdayId": 4, "start": 8, "end": 18 }
+            ]
+         
+        }
+      ]
+}
+
+
+
