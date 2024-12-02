@@ -20,7 +20,7 @@ import javax.swing.JFrame;
  *
  * @author me
  */
-public class WorkerDialog extends javax.swing.JDialog {
+public class AddWorkerDialog extends javax.swing.JDialog {
 
     
     private Timetable timetable;
@@ -30,7 +30,7 @@ public class WorkerDialog extends javax.swing.JDialog {
     /**
      * Creates new form WorkerDialog
      */
-    public WorkerDialog(Timetable timetable, LocationShift shift) {
+    public AddWorkerDialog(Timetable timetable, LocationShift shift) {
         this.timetable = timetable;
         this.shift = shift;
         

@@ -42,9 +42,10 @@ public class Workday implements Serializable {
      * @param name
      * @param locations 
      */
-    public Workday(int id, String name) {
+    public Workday(int id, String name, int numberOfShifts) {
         this.id = id;
         this.name = name;
+       this.numberOfShifts = numberOfShifts;
      }
     
     
@@ -64,6 +65,8 @@ public class Workday implements Serializable {
         this.name = name;
     }
     
+    
+    
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Workday) {
@@ -73,9 +76,17 @@ public class Workday implements Serializable {
         return false;
     }
 
+    @Override
     public String toString() {
-        return " ID : "+ id + " [ " + name + " ]";
+        return "Workday{" + "id=" + id + ", name=" + name + ", numberOfShifts=" + numberOfShifts + '}';
     }
+
+    
+    
+//    
+//    public String toString() {
+//        return " ID : "+ id + " [ " + name + " ]";
+//    }
     
     /**
      *

@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Landry Ngani
+ * @author bryan
  */
 class PrintDialog extends JDialog {
     

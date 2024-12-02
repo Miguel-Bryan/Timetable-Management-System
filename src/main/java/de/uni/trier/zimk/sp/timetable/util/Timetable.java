@@ -21,7 +21,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.log4j.Logger;
 
 /**
- * @author landry.ngani
+ * @author bryan
  *
  */
 public class Timetable implements Serializable {

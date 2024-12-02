@@ -6,6 +6,7 @@ package de.uni.trier.zimk.sp.timetable.oo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import de.uni.trier.zimk.sp.timetable.preferences.Preferences;
 import de.uni.trier.zimk.sp.timetable.util.Ramdomizer;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class Worker implements Serializable {
     private List<LocationShift> shifts;
     
     @Expose (serialize = false, deserialize = false)
-    private List<TimePeriod> preferences;
+    private List<Preferences> preferences;
 
     
     public Worker(){}
@@ -68,7 +69,7 @@ public class Worker implements Serializable {
         this.color = new WorkerColor(255,255,255);
         
         this.shifts = new ArrayList<LocationShift>();
-        this.preferences = new ArrayList<TimePeriod>();
+        this.preferences = new ArrayList<Preferences>();
 
     }
 
@@ -91,14 +92,14 @@ public class Worker implements Serializable {
 
         
         this.shifts = new ArrayList<LocationShift>();
-        this.preferences = new ArrayList<TimePeriod>();
+        this.preferences = new ArrayList<Preferences>();
 
         for (LocationShift shift : worker.getShifts()) {
             shifts.add(shift);
         }
 
-        for (TimePeriod period : worker.getPreferences()) {
-            preferences.add(period);
+        for (Preferences prefs : worker.getPreferences()) {
+            preferences.add(prefs);
         }
 
     }
@@ -114,7 +115,7 @@ public class Worker implements Serializable {
         this.color = new WorkerColor(255,255,255);
 
         this.shifts = new ArrayList<LocationShift>();
-        this.preferences = new ArrayList<TimePeriod>();
+        this.preferences = new ArrayList<Preferences>();
 
     }
 
@@ -192,11 +193,11 @@ public class Worker implements Serializable {
         this.ratio = ratio;
     }
 
-    public List<TimePeriod> getPreferences() {
+    public List<Preferences> getPreferences() {
         return preferences;
     }
 
-    public void setPreferences(List<TimePeriod> preferences) {
+    public void setPreferences(List<Preferences> preferences) {
         this.preferences = preferences;
     }
 
@@ -230,8 +231,8 @@ public class Worker implements Serializable {
     }
 
     public boolean isWillingForWorkday(Workday workday) {
-        for (TimePeriod period : preferences) {
-            if (period.getWorkday().equals(workday)) {
+        for (Preferences prefs : preferences) {
+            if (prefs.getWorkday().equals(workday)) {
                 return true;
             }
         }
@@ -239,13 +240,13 @@ public class Worker implements Serializable {
     }
 
     /*
-     * public boolean isWillingForShift(Shift shift) { for(TimePeriod period :
-     * preferences){ if( period.covers(shift) ){ return true; } } return false;
+     * public boolean isWillingForShift(Shift shift) { for(Preferences prefs:
+     * preferences){ if( prefs.covers(shift) ){ return true; } } return false;
      * }
      */
     public boolean isWillingForShift(LocationShift shift) {
-        for (TimePeriod period : preferences) {
-            if (period.contains(shift)) {
+        for (Preferences  prefs : preferences) {
+            if (prefs.contains(shift)) {
                 return true;
             }
         }
@@ -345,8 +346,8 @@ public class Worker implements Serializable {
      */
     public boolean hasSufficientPreferences() {
         int total = 0;
-        for (TimePeriod period : preferences) {
-            total += period.getNumberOfHours();
+        for (Preferences  prefs : preferences) {
+            total += prefs.getNumberOfHours();
         }
         return (total / LocationShift.MIN_TIME) >= debit + (preferences.size() * ratio);
     }

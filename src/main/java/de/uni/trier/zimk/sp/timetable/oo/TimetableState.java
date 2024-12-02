@@ -9,7 +9,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
- * @author me
+ * @author bryan
  *
  */
 public class TimetableState {

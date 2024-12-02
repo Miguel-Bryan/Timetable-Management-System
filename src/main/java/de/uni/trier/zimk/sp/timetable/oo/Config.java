@@ -26,12 +26,13 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import de.uni.trier.zimk.sp.timetable.preferences.Preferences;
 import static java.lang.System.out;
 
 
 /**
  *
- * @author Landry Ngani
+ * @author bryan
  */
 public class Config {
 
@@ -51,7 +52,7 @@ public class Config {
         List<Workday> workdays = new ArrayList<Workday>();
         int weekLength = 5;
         for (int i = 0; i < weekLength; i++) {
-            workdays.add(new Workday(i + 1, DAY_NAMES[i]));
+            workdays.add(new Workday(i + 1, DAY_NAMES[i], 3));
         }
 
         String[] LOC_NAMES = {"SP 1", "SP 2", "SP 3"};
@@ -92,9 +93,9 @@ public class Config {
         for (int i = 0; i < WORKERS_NAMES.length; i++) {
             Worker worker = new Worker(WORKERS_NAMES[i], WORKER_DEBITS[i]);
             
-            List<TimePeriod> preferences = new ArrayList<TimePeriod>();
-            TimePeriod tp = new TimePeriod( workdays.get( 0 ), 8 , 18 );
-            preferences.add(tp);
+            List<Preferences> preferences = new ArrayList<Preferences>();
+            Preferences pf = new Preferences( workdays.get( 0 ), 8 , 18 ,7,18);
+            preferences.add(pf);
             worker.setPreferences( preferences );
             
             workers.add(worker);
@@ -123,9 +124,9 @@ public class Config {
         for (int i = 0; i < WORKERS_NAMES.length; i++) {
             Worker worker = new Worker(WORKERS_NAMES[i], WORKER_DEBITS[i]);
             
-            List<TimePeriod> preferences = new ArrayList<TimePeriod>();
-            TimePeriod tp = new TimePeriod( workdays.get( 0 ), 8 , 18 );
-            preferences.add(tp);
+            List<Preferences> preferences = new ArrayList<Preferences>();
+            Preferences pf = new Preferences( workdays.get( 0 ), 8 , 18, 7,18 );
+            preferences.add(pf);
             worker.setPreferences( preferences );
             
             workers.add(worker);     

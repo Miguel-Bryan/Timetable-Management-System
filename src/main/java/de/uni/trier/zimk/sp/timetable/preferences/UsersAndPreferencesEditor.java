@@ -22,7 +22,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Landry Ngani
+ * @author bryan
  */
 public class UsersAndPreferencesEditor extends javax.swing.JPanel {
     private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(Timetable.class);
@@ -129,11 +129,16 @@ public class UsersAndPreferencesEditor extends javax.swing.JPanel {
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         // TODO add your handling code here:
         addButton.setActionCommand("ADD BUTTON");
-        addButton.addActionListener(new AddWorkerActionListener());
+        addButton.addActionListener(new Add_RemoveWorkerActionListener());
+        System.out.println("Add Button pressed.");
+       
     }//GEN-LAST:event_addButtonActionPerformed
 
     private void removeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeButtonActionPerformed
         // TODO add your handling code here:
+        removeButton.setActionCommand("REMOVE BUTTON");
+        removeButton.addActionListener(new Add_RemoveWorkerActionListener());
+         System.out.println("Remove button pressed.");
     }//GEN-LAST:event_removeButtonActionPerformed
 
     private void workerTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_workerTableMouseClicked
@@ -148,7 +153,7 @@ public class UsersAndPreferencesEditor extends javax.swing.JPanel {
             
             if( shift != null ){
                 
-                List<Worker> volunteers = new WorkerDialog(model.getTimetable(), shift).getSelectedWorkers();
+                List<Worker> volunteers = new AddWorkerDialog(model.getTimetable(), shift).getSelectedWorkers();
                 Collections.sort(volunteers, new WorkerComparable());
                 
                 model.getTimetable().getTimetableState().updateVolunteers( shift , volunteers);

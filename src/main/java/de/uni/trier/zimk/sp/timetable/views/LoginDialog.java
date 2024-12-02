@@ -48,7 +48,7 @@ public class LoginDialog extends javax.swing.JDialog {
         cancelButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("ZIMK - Timetable");
+        setTitle("BRYAN - Timetable");
         setIconImage(null);
         setName("loginDialog"); // NOI18N
         setResizable(false);

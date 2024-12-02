@@ -26,7 +26,7 @@ import java.util.TimerTask;
 import javax.swing.*;
 
 /**
- * @author landry.ngani
+ * @author bryan
  *
  */
 public class PlannerView extends JFrame implements TimeTableListener {

@@ -11,7 +11,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
- * @author landry.ngani
+ * @author bryan
  *
  */
 public class Planner {

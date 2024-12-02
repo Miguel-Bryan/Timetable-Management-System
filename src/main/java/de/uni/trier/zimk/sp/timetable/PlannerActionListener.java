@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import de.uni.trier.zimk.sp.timetable.util.Timetable;
 
 /**
- * @author landry.ngani
+ * @author bryan
  *
  */
 public class PlannerActionListener implements ActionListener {

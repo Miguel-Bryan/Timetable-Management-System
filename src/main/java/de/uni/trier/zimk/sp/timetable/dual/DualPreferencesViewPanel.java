@@ -10,7 +10,7 @@ import de.uni.trier.zimk.sp.timetable.preferences.UsersAndPreferencesModel;
 import de.uni.trier.zimk.sp.timetable.preferences.EditableDayShiftTimetableTableModel;
 import de.uni.trier.zimk.sp.timetable.oo.Worker;
 import de.uni.trier.zimk.sp.timetable.oo.WorkerComparable;
-import de.uni.trier.zimk.sp.timetable.preferences.WorkerDialog;
+import de.uni.trier.zimk.sp.timetable.preferences.AddWorkerDialog;
 import java.awt.Point;
 import java.util.Collections;
 import java.util.List;
@@ -80,7 +80,7 @@ public class DualPreferencesViewPanel extends javax.swing.JPanel {
             
             if( shift != null ){
                 
-                List<Worker> volunteers = new WorkerDialog(model.getTimetable(), shift).getSelectedWorkers();
+                List<Worker> volunteers = new AddWorkerDialog(model.getTimetable(), shift).getSelectedWorkers();
                 Collections.sort(volunteers, new WorkerComparable());
                 
                 model.getTimetable().getTimetableState().updateVolunteers( shift , volunteers);
